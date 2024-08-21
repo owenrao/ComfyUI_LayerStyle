@@ -89,7 +89,7 @@ When loading diffusion models, using local files only, not connect to HuggingFac
 # )
 
 
-DEFAULT_MODEL_DIR = os.path.abspath(os.path.join(folder_paths.models_dir, 'lama'))
+DEFAULT_MODEL_DIR = folder_paths.get_filename_list("lama")
 # print(f"DEFAULT_MODEL_DIR={DEFAULT_MODEL_DIR}")
 
 MODEL_DIR_HELP = f"""
